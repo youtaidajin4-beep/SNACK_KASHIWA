@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- SEO の主設定: js/site-config.js（canonicalUrl / ogImageUrl / seoDescription / ogDescription）。main.js が description・OGP・Twitter を実行時に上書きします。本番はここと index の初期 canonical/og を同じ URL に揃えてください。 -->
+    <title>スナック かしわ｜熊本・下通</title>
+    <meta
+      name="description"
+      content="熊本・下通のスナックかしわ。初めてのスナック、一人飲み、女性のお一人様も。落ち着いて飲めるカウンター。TM34ビル3階D。明朗会計。熊本で静かな夜を過ごしたい方へ。"
+    />
+    <link rel="canonical" id="canonical-link" href="https://example.com/kashiwa/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="スナック かしわ｜熊本・下通" />
+    <meta
+      property="og:description"
+      content="熊本の夜に、少しだけ話したい日がある。下通でふらっと立ち寄れる静かなスナックです。"
+    />
+    <meta property="og:url" content="https://example.com/kashiwa/" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="スナック かしわ｜熊本・下通" />
+    <meta
+      name="twitter:description"
+      content="熊本の夜に、少しだけ話したい日がある。下通でふらっと立ち寄れる静かなスナックです。"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Shippori+Mincho:wght@400;500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <a class="sr-only" href="#main">本文へスキップ</a>
+
+    <header class="site-header">
+      <a class="site-header__brand" href="#hero" aria-label="スナック かしわ トップへ">
+        <img
+          id="brand-name"
+          class="site-header__logo"
+          alt=""
+          width="132"
+          height="52"
+          decoding="async"
+          hidden
+        />
+        <span id="brand-text" class="site-header__wordmark">スナック かしわ</span>
+      </a>
+      <nav class="site-nav" aria-label="ページ内">
+        <a href="#hero">夜</a>
+        <a href="#night-prelude">灯</a>
+        <a href="#about">店内</a>
+        <a href="#first-time">初めて</a>
+        <a href="#for-you">夜に</a>
+        <a href="#price">料金</a>
+        <a href="#access">行く</a>
+        <a href="#contact">連絡</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- 1: エディトリアル・ヒーロー（縦長写真・縦書きキャッチ・帯＋ロゴ） -->
+      <section class="hero hero--editorial" id="hero" aria-labelledby="hero-heading">
+        <div class="hero-editorial__photo" aria-hidden="true">
+          <img
+            id="hero-portrait-img"
+            class="hero-editorial__img"
+            alt=""
+            width="1080"
+            height="1920"
+            decoding="async"
+            fetchpriority="high"
+            hidden
+          />
+        </div>
+        <div class="hero-editorial__no-photo" aria-hidden="true"></div>
+        <div class="hero-editorial__scrim" aria-hidden="true"></div>
+        <div class="hero-editorial__vignette" aria-hidden="true"></div>
+        <div class="hero-editorial__layout">
+          <div class="hero-editorial__copy reveal-slow">
+            <h1 id="hero-heading" class="hero-editorial__title">
+              <span class="hero-editorial__title-col">熊本の夜に、</span>
+              <span class="hero-editorial__title-col">少しだけ話したい日がある。</span>
+            </h1>
+            <p class="hero-editorial__sub">
+              初めての方も、お一人の方も、<br />
+              ふらっと立ち寄れるスナックです。
+            </p>
+          </div>
+          <div class="hero-editorial__band">
+            <img
+              id="hero-editorial-logo"
+              class="hero-editorial__logo"
+              alt=""
+              width="140"
+              height="120"
+              decoding="async"
+              hidden
+            />
+            <a
+              class="hero-editorial__scroll"
+              href="#night-prelude"
+              aria-label="次のセクションへ"
+            >
+              <span class="hero-editorial__scroll-icon" aria-hidden="true"></span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-editorial__wave" aria-hidden="true">
+          <svg
+            class="hero-editorial__wave-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 40"
+            preserveAspectRatio="none"
+            role="presentation"
+            focusable="false"
+          >
+            <path
+              fill="currentColor"
+              d="M0 40V28c200-18 400-18 600-6s400 12 600-6v24H0z"
+            />
+          </svg>
+        </div>
+      </section>
+
+      <!-- 2: ヒーロー下の世界観（テキストのみ） -->
+      <section class="night-prelude" id="night-prelude" aria-labelledby="night-prelude-heading">
+        <div class="night-prelude__bg" aria-hidden="true"></div>
+        <div class="wrap night-prelude__layout night-prelude__layout--text-only">
+          <div class="night-prelude__text reveal-slow">
+            <p class="night-prelude__eyebrow">Still night lounge</p>
+            <h2 id="night-prelude-heading" class="night-prelude__heading">灯りが、間をゆっくり作る。</h2>
+            <p class="night-prelude__lead">
+              声を張らなくても届く距離感。スナックの気軽さと、夜のラウンジの余白を、同じカウンターで重ねています。
+            </p>
+            <ul class="night-prelude__chips" aria-label="かしわのキーワード">
+              <li>静けさ</li>
+              <li>余白</li>
+              <li>下通</li>
+              <li>一人でも</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3: 店内の気配 -->
+      <section class="section section--depth section--about-rich" id="about" aria-labelledby="about-heading">
+        <div class="wrap">
+          <header class="section__head reveal-slow">
+            <span class="section__eyebrow">Distance &amp; light</span>
+            <h2 id="about-heading">琥珀の距離で、夜を預かる</h2>
+            <p class="section__lead section__lead--tight">
+              「賑やかさ」より先に、落ち着きを置く。熊本・下通で一人飲みや二次会を探す方へ。女性のお一人様も、会話のテンポを自分で決められる席です。
+            </p>
+          </header>
+          <div class="prose prose--short reveal">
+            <p>
+              琥珀の灯りだけが距離を測るカウンター。<strong>熊本の夜にそっと座れる席</strong>を、ラウンジの余白とスナックの親しさで整えています。
+            </p>
+            <p>
+              グラス越しの会話も、黙って飲む夜も、どちらも自然なテンポで。かしわは、その静けさを守ることからはじまります。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4: 初めての方へ -->
+      <section class="section section--depth section--tight section--first-boost" id="first-time" aria-labelledby="first-heading">
+        <div class="wrap">
+          <header class="section__head reveal-slow">
+            <span class="section__eyebrow">First visit</span>
+            <h2 id="first-heading">初めての方へ</h2>
+            <p class="section__lead">
+              熊本でスナックがはじめてでも大丈夫です。料金や流れ、1人でも浮かないか——不安になりやすいところを、かたちにしました。
+            </p>
+          </header>
+
+          <div class="assurance-grid">
+            <article class="assurance-card reveal">
+              <div class="assurance-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.25">
+                  <path d="M12 21s-6-4.35-6-9a6 6 0 1 1 12 0c0 4.65-6 9-6 9Z" />
+                  <circle cx="12" cy="12" r="2" />
+                </svg>
+              </div>
+              <h3>お一人様歓迎</h3>
+              <p>カウンター越しに、無理のない距離でお迎えします。</p>
+            </article>
+
+            <article class="assurance-card reveal">
+              <div class="assurance-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.25">
+                  <circle cx="12" cy="8" r="3" />
+                  <path d="M6 20v-1a6 6 0 0 1 12 0v1" />
+                </svg>
+              </div>
+              <h3>女性も安心</h3>
+              <p>女性のお一人飲み、お友だち同士も歓迎です。静かに過ごせる席づくりを心がけています。</p>
+            </article>
+
+            <article class="assurance-card reveal">
+              <div class="assurance-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.25">
+                  <rect x="4" y="5" width="16" height="14" rx="2" />
+                  <path d="M8 9h8M8 13h5" />
+                </svg>
+              </div>
+              <h3>明朗会計</h3>
+              <p>ご不明点は先にお聞きください。熊本で落ち着いて飲める店であり続けるために。</p>
+            </article>
+
+            <article class="assurance-card reveal">
+              <div class="assurance-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.25">
+                  <path d="M8 10h8M8 14h5M6 4h12a2 2 0 0 1 2 2v12H4V6a2 2 0 0 1 2-2Z" />
+                </svg>
+              </div>
+              <h3>初めてのスナック歓迎</h3>
+              <p>流れや料金の感じ、分からないことはその都度ご説明します。</p>
+            </article>
+
+            <article class="assurance-card reveal">
+              <div class="assurance-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.25">
+                  <path d="M5 12h14M9 8l-4 4 4 4" />
+                </svg>
+              </div>
+              <h3>無理な営業はしません</h3>
+              <p>静かに飲みたい夜を、最優先にします。</p>
+            </article>
+
+            <article class="assurance-card reveal">
+              <div class="assurance-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.25">
+                  <path d="M4 19h16M7 16V9M12 16V5M17 16v-5" />
+                </svg>
+              </div>
+              <h3>静かに飲める</h3>
+              <p>照明と音は控えめに。会話のリズムも、落ち着いたトーンで。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5: こんな夜に（ランプのシーン — 初めての方へとトーンを分ける） -->
+      <section class="section section--for-you" id="for-you" aria-labelledby="foryou-heading">
+        <div class="wrap">
+          <header class="section__head section__head--for-you reveal-slow">
+            <span class="section__eyebrow">For you</span>
+            <h2 id="foryou-heading">こんな夜に</h2>
+            <p class="section__lead">
+              出張の夜、接待のあと、二次会。熊本で一人飲みできる店を探している方へ。
+            </p>
+          </header>
+
+          <div class="for-you-panel">
+          <div class="icon-card-grid">
+            <article class="icon-card reveal">
+              <div class="icon-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.2">
+                  <path d="M4 20V8l8-4 8 4v12" />
+                  <path d="M9 20v-6h6v6" />
+                </svg>
+              </div>
+              <div>
+                <h3>仕事終わりに</h3>
+                <p>一日の輪郭を、静かなグラスでほどくように。</p>
+              </div>
+            </article>
+
+            <article class="icon-card reveal">
+              <div class="icon-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.2">
+                  <circle cx="8" cy="8" r="3" />
+                  <circle cx="16" cy="16" r="3" />
+                  <path d="M11 11l2 2" />
+                </svg>
+              </div>
+              <div>
+                <h3>2軒目に</h3>
+                <p>賑やかしのあとに、会話と空気を整えたいとき。</p>
+              </div>
+            </article>
+
+            <article class="icon-card reveal">
+              <div class="icon-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.2">
+                  <rect x="5" y="5" width="14" height="14" rx="2" />
+                  <path d="M9 9h6M9 13h4" />
+                </svg>
+              </div>
+              <div>
+                <h3>出張の夜に</h3>
+                <p>下通周辺で、落ち着いて飲める場所をお探しの方へ。</p>
+              </div>
+            </article>
+
+            <article class="icon-card reveal">
+              <div class="icon-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.2">
+                  <circle cx="12" cy="8" r="3" />
+                  <path d="M6 20v-1a6 6 0 0 1 12 0v1" />
+                </svg>
+              </div>
+              <div>
+                <h3>1人で飲みたい日に</h3>
+                <p>本を読んでもいいし、話したくなったら話してもいい席です。</p>
+              </div>
+            </article>
+
+            <article class="icon-card reveal icon-card--span">
+              <div class="icon-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.2">
+                  <path d="M4 12h4l2-3 4 6 2-3h4" />
+                </svg>
+              </div>
+              <div>
+                <h3>少しだけ話したい日に</h3>
+                <p>言葉の余白を残したまま、熊本の夜にそっと寄り添います。</p>
+              </div>
+            </article>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6: 料金（紙の島） -->
+      <section class="section section--paper section--price-rich" id="price" aria-labelledby="price-heading">
+        <div class="wrap reveal">
+          <header class="section__head section__head--price">
+            <span class="section__eyebrow">Price</span>
+            <h2 id="price-heading">料金</h2>
+            <p class="section__lead">
+              セット・チャージなどのご利用条件と、ドリンクの扱いを簡潔にまとめています。詳細はお電話でもお尋ねください。
+            </p>
+          </header>
+          <div class="price-panel">
+            <div id="menu-root" class="menu-root" aria-label="料金・ご利用案内"></div>
+            <div id="payment-root" class="payment-root" aria-label="決済方法"></div>
+            <p class="price-note">※料金・メニューは変更になる場合があります。最新はお問い合わせください。</p>
+          </div>
+          <div class="cta-row cta-row--center">
+            <a class="btn btn--outline-night" href="#contact">料金・空きを聞いてみる</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7: アクセス -->
+      <section class="section section--depth" id="access" aria-labelledby="access-heading">
+        <div class="wrap reveal">
+          <header class="section__head">
+            <span class="section__eyebrow">Access</span>
+            <h2 id="access-heading">アクセス</h2>
+            <p class="section__lead">
+              <strong>TM34ビル 3階D号室</strong>。熊本市電「花畑町」駅から徒歩圏内。夜の入口と地図で、場所をご確認ください。
+            </p>
+          </header>
+          <p class="prose" id="address-block" style="margin-top: 0">
+            〒860-0807 熊本県熊本市中央区下通１丁目２−１１ TM34ビル 3階D号室
+          </p>
+          <div class="map-shell" id="map-shell">
+            <div class="map-shell__inner">
+              <div class="map-shell__placeholder" id="map-placeholder">
+                地図を読み込めない場合は、ブラウザで Google マップを開くか、HTTPS / ローカルサーバー経由で表示してください。
+              </div>
+              <div id="map-host" class="map-host" aria-live="polite"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 最後: 静かなCTA -->
+      <section class="section section--contact" id="contact" aria-labelledby="contact-heading">
+        <div class="wrap reveal-slow">
+          <header class="section__head">
+            <span class="section__eyebrow">Contact</span>
+            <h2 id="contact-heading">ご予約・お問い合わせ</h2>
+            <p class="section__lead">押しの強いお誘いはしません。今夜の空きや雰囲気の確認から、どうぞお気軽に。</p>
+          </header>
+
+          <p class="contact-poem">
+            今夜、<br />
+            少しだけ寄ってみる。
+          </p>
+
+          <div class="contact-links">
+            <a class="contact-card contact-card--btn" id="ig-link" href="https://www.instagram.com/kumamoto_kashiwa/">
+              <span class="contact-card__label">Instagram</span>
+              <span class="contact-card__value">空気感を見る</span>
+            </a>
+            <a class="contact-card contact-card--btn" id="tel-link" href="tel:0963217822">
+              <span class="contact-card__label">お電話</span>
+              <span class="contact-card__value" id="tel-display">096-321-7822</span>
+            </a>
+            <a class="contact-card contact-card--btn" href="#access">
+              <span class="contact-card__label">Map</span>
+              <span class="contact-card__value">場所を確認する</span>
+            </a>
+          </div>
+
+          <div class="cta-row cta-row--center">
+            <a class="btn btn--ghost" id="tel-link-2" href="tel:0963217822">今夜の空き状況を聞く</a>
+            <a class="btn btn--quiet" id="ig-link-2" href="https://www.instagram.com/kumamoto_kashiwa/">Instagramを開く</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p id="footer-shop">スナック かしわ</p>
+      <p>熊本・下通｜静かに飲めるスナック</p>
+    </footer>
+
+    <script src="js/site-config.js"></script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

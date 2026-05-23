@@ -1,0 +1,61 @@
+:root {
+  /* 夜の没入 — 暖かい暗さ（プロンプト指定） */
+  --color-night: #0f0f0f;
+  --color-night-soft: #1d1d1d;
+  --color-night-warm: #2b2118;
+  --color-ember: #c4784a;
+  --color-ember-soft: rgba(196, 120, 74, 0.35);
+  --color-lamp: rgba(255, 190, 130, 0.12);
+  --color-milk: #f8f6f2;
+  --color-milk-muted: rgba(248, 246, 242, 0.72);
+  --color-milk-dim: rgba(248, 246, 242, 0.48);
+  --color-accent: #8b7355;
+  --color-accent-muted: rgba(139, 115, 85, 0.45);
+
+  /* 紙の島（料金ブロック） */
+  --color-paper: #f0ebe4;
+  --color-paper-ink: #1d1d1d;
+  --color-paper-muted: #5a534a;
+
+  --color-line: rgba(139, 115, 85, 0.22);
+  --color-line-dark: rgba(248, 246, 242, 0.08);
+
+  /* エディトリアル・ヒーロー下部帯（モックの暖かい黒に近い色） */
+  --color-hero-editorial-band: #120f0e;
+
+  --font-sans: "Zen Kaku Gothic New", "Noto Sans JP", system-ui, -apple-system,
+    "Hiragino Sans", sans-serif;
+  --font-display: "Shippori Mincho", "Zen Kaku Gothic New", "Noto Sans JP", serif;
+  --font-en: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --text-xs: clamp(0.7rem, 0.66rem + 0.2vw, 0.78rem);
+  --text-sm: clamp(0.78rem, 0.74rem + 0.22vw, 0.88rem);
+  --text-base: clamp(0.9rem, 0.84rem + 0.32vw, 1.02rem);
+  --text-lg: clamp(1.05rem, 0.95rem + 0.45vw, 1.22rem);
+  --text-xl: clamp(1.2rem, 1.05rem + 0.75vw, 1.55rem);
+  --text-hero: clamp(1.55rem, 1.1rem + 2vw, 2.45rem);
+
+  --space-xs: 0.5rem;
+  --space-sm: 0.85rem;
+  --space-md: 1.35rem;
+  --space-lg: 2.25rem;
+  --space-xl: 3.25rem;
+  --space-2xl: 5rem;
+  --space-section: clamp(4rem, 9vw, 7rem);
+  --space-chapter: min(92vh, 52rem);
+
+  --radius-sm: 3px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  --shadow-soft: 0 24px 60px rgba(0, 0, 0, 0.35);
+  --shadow-glow: 0 0 80px rgba(196, 120, 74, 0.08);
+
+  --content-max: 38rem;
+  --content-wide: 52rem;
+  --header-h: 3.5rem;
+
+  --ease-out: cubic-bezier(0.25, 0.85, 0.35, 1);
+  --reveal-duration: 1.05s;
+  --reveal-slow-duration: 1.45s;
+}
